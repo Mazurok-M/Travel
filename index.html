@@ -4,195 +4,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Шапка сайта -->
     <header>
-        <nav>
-            <a href="index.html"><img src="images/logo.svg" alt="/logo"></a>
-            <ul>
-                <li> <a href="">Booking</a></li>
-                <li> <a href="">Facilities</a></li>
-                <li> <a href="">About Us</a></li>
-                <li> <a href="">Location</a></li>
-                <li> <a href="">Contact</a></li>
+        <nav class="site-nav container">
+            <a href="index.html" class="logo"><img src="images/logo.svg" alt="logo" ></a>
+            <ul class="nav-list">
+                <li class="item"> <a href="https://www.booking.com/" target="_blank" class="nav-link">Booking</a></li>
+                <li class="item"> <a href="#facilities" class="nav-link">Facilities</a></li>
+                <li class="item"> <a href="#about" class="nav-link">About Us</a></li>
+                <li class="item"> <a href="" class="nav-link">Location</a></li>
+                <li class="item"> <a href="" class="nav-link">Contact</a></li>
             </ul>
-            <button type="button">Sign In</button>
+            <button type="button" class="nav-bt">Sign In</button>
         </nav>
     </header>
     <main>
         <!-- Герой  -->
-        <section>
-            <h1>Find Your Best Hotel for Deals</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>      
-            <ul>
-                <li><img src="./images/terrace.jpg" alt="terrace" width="956">
-                <p>Wagstaffe NSW, Australia</p></li>
-                <li><img src="./images/pool.jpg" alt="pool" width="308"></li>
-                <li><img src="./images/room.jpg" alt="room" width="308"></li>
-            </ul>
+        <section class="hero container">
+            <h1 class="hero-title">Find Your Best Hotel <br> for Deals</h1>
+            <div class="hero-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="foto">
+                <div class="hero-item container">
+                    <img src="./images/terrace.jpg" alt="terrace" width="956" class="hero-img">
+                    <p class="hero-text-img">Wagstaffe NSW, Australia</p>
+                </div>
+                <ul class="hero-list">
+                    <li class="hero-item vertical"><img src="./images/pool.jpg" alt="pool" width="308" class="hero-img first"></li>
+                    <li class="hero-item vertical"><img src="./images/room.jpg" alt="room" width="308" class="hero-img"></li>
+                </ul>
+            </div> 
+            
         </section>
         <!-- Сервіс -->
-        <section>
-            <h2>Facilities & Service</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy</p>
-            <button type="button">View All</button>
-            <ul>
-                <li><img src="./images/workspace.svg" alt="" width="68"> 
-                    <h3>Private Workspace</h3>
+        <section class="service container">
+            <h2 id="facilities" class="service-title">Facilities & Service</h2>
+            <div class="facilities">
+                <div class="service-text">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                    </p>
+                </div>              
+                <button type="button" class="service-bt">View All</button>
+            </div>           
+            <ul class="service-list">
+                <li class="service-item"><img src="./images/workspace.svg" alt="" width="68"> 
+                    <h3 class="facilities-title">Private Workspace</h3>
                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
                 </li>
-                <li><img src="./images/parking.svg" alt="" width="68">
-                    <h3>Parking Area</h3>
+                <li class="service-item"><img src="./images/parking.svg" alt="" width="68">
+                    <h3 class="facilities-title">Parking Area</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
                 </li>
-                <li><img src="./images/wifi.svg" alt="" width="68">
-                    <h3>Free Wifi</h3>
+                <li class="service-item"><img src="./images/wifi.svg" alt="" width="68">
+                    <h3 class="facilities-title">Free Wifi</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
                 </li>
-                <li><img src="./images/breakfast.svg" alt="" width="68">
-                    <h3>Breakfast</h3>
+                <li class="service-item"><img src="./images/breakfast.svg" alt="" width="68">
+                    <h3 class="facilities-title">Breakfast</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>
                 </li>
             </ul>
         </section>
         <!-- Про нас -->
-        <section>
+        <section class="about container">
             <img src="./images/Rectangle.jpg" alt="Swimming pool and restaurant" width="628">
-            <h2>Finest Luxury Hotels & Resort</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-            book.</p>
-            <ul>
-                <li>
-                    <h3>120K+</h3>
-                    <p>Website User</p>
-                </li>
-                <li>
-                    <h3>110K+</h3>
-                    <p>Happy Clients</p>
-                </li>
-                <li>
-                    <h3>20K+</h3>
-                    <p>Active Hotels</p>
-                </li>
-                <li>
-                    <h3>8Y+</h3>
-                    <p>company Year</p>
-                </li>
-            </ul>
-            <a href="">Explore More</a>
+            <div>
+                <h2 id="about" class="about-title">Finest Luxury Hotels & Resort</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                    standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen
+                    book.</p>
+                <ul class="about-list">
+                    <li class="about-item">
+                        <h3>120K+</h3>
+                        <p>Website User</p>
+                    </li>
+                    <li class="about-item">
+                        <h3>110K+</h3>
+                        <p>Happy Clients</p>
+                    </li>
+                    <li class="about-item">
+                        <h3>20K+</h3>
+                        <p>Active Hotels</p>
+                    </li>
+                    <li class="about-item">
+                        <h3>8Y+</h3>
+                        <p>company Year</p>
+                    </li>
+                </ul>
+                <a href="" class="about-link">Explore More</a>
+            </div>           
         </section>
         <!-- Партнери -->
-        <section>
-            <ul>
-                <li>
+        <section class="partners container">
+            <h2 class="partners-title">Partners</h2>
+            <ul class="partners-list">
+                <li class="partners-item">
                     <a href="https://www.hotels.com/" target="_blank"><img src="./images/Hotels.svg" alt="logo Hotels" width="150"></a>
                 </li>
-                <li>
+                <li class="partners-item">
                     <a href="" target="_blank"><img src="./images/Hyatt.svg" alt="logo Hyatt" width="150"></a>
                 </li>
-                <li>
+                <li class="partners-item">
                     <a href="" target="_blank"><img src="./images/park_hotels.svg" alt="logo Park hotels and resorts" width="150"></a>
                 </li>
-                <li>
+                <li class="partners-item">
                     <a href="" target="_blank"><img src="./images/Cushman.svg" alt="logo Cushman and wakefield" width="150"></a>
                 </li>
-                <li>
+                <li class="partners-item">
                     <a href="" target="_blank"><img src="./images/hilton.svg" alt="logo Hilton" width="150"></a>
                 </li>
             </ul>
         </section>
         <!-- Відгуки -->
-        <section>
+        <section class="reviews container">
             <img src="./images/woman.jpg" alt="a woomen in a hotel room" width="640">
             <div>
-                <img src="./images/Rectangle.svg" alt="Foto a woomen">
-                <h2>Nazmul Nabeel</h2>
-                <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                <img src="./images/Rectangle.svg" alt="Foto a women" class="icon">
+                <h2 class="name-women">Nazmul Nabeel</h2>
+                <p class="review-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                 dummy text ever since the ”</p>
             </div>            
         </section>
-        <article>
-            <h2>Best Quality Hotels</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <ul>
-                <li>
-                    <button type="button">1 Star</button>
+        <article class="hotels container">
+            <h2 class="hotels-title">Best Quality Hotels</h2>
+            <p class="hotels-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <ul class="star-list">
+                <li class="star-iteam">
+                    <button type="button" class="star-bt">1 Star</button>
                 </li>
-                <li>
-                    <button type="button">2 Star</button>
+                <li class="star-iteam">
+                    <button type="button" class="star-bt">2 Star</button>
                 </li>
-                <li>
-                    <button type="button">3 Star</button>
+                <li class="star-iteam">
+                    <button type="button" class="star-bt">3 Star</button>
                 </li>
-                <li>
-                    <button type="button">4 Star</button>
+                <li class="star-iteam">
+                    <button type="button" class="star-bt">4 Star</button>
                 </li>
-                <li>
-                    <button type="button">5 Star</button>
+                <li class="star-iteam">
+                    <button type="button" class="star-bt">5 Star</button>
                 </li>
-                <li>
-                    <button type="button">View All</button>
+                <li class="star-iteam">
+                    <button type="button" class="service-bt">View All</button>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <img src="./images/basin.jpg" alt="Swimming pool" width="411">
+            <ul class="hotels-list">
+                <li class="hotels-iteam">
+                    <img src="/images/basin.jpg" alt="Swimming pool" width="411" class="hotel-img">
                     <h3>Swimming pool and beach of luxury...</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p>$250 /NIGHT</p>
-                    <a href="">Details</a>
+                    <p class="hotel-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div>
+                        <p class="price"> <span>$250</span> /NIGHT</p>
+                        <a href="" class="hotels-bt">Details</a>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/panorama.jpg" alt="Skyscrapers" width="411">
+                <li class="hotels-iteam">
+                    <img src="./images/panorama.jpg" alt="Skyscrapers" width="411" class="hotel-img">
                     <h3>InterContinental Fujairah Resort Clu...</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p>$250 /NIGHT</p>
-                    <a href="">Details</a>
+                    <p class="hotel-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div>
+                        <p class="price"> <span>$250</span> /NIGHT</p>
+                        <a href="" class="hotels-bt">Details</a>
+                    </div>
                 </li>
-                <li>
-                    <img src="./images/Image.jpg" alt="Hotel Burj Al Arab" width="411">
+                <li class="hotels-iteam">
+                    <img src="./images/Image.jpg" alt="Hotel Burj Al Arab" width="411" class="hotel-img">
                     <h3>Burj Al Arab - Jumeirah Street - Dub...</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p>$250 /NIGHT</p>
-                    <a href="">Details</a>
+                    <p class="hotel-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div>
+                        <p class="price"> <span>$250</span> /NIGHT</p>
+                        <a href="" class="hotels-bt">Details</a>
+                    </div>                   
                 </li>
             </ul>            
         </article>
         <!-- Підписка -->
-        <section>
-            <h2>Subscribe for our mailing list to get latest updates and offers</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-            <img src="./images/men.jpg" alt="Men">
+        <section class="subscription container">
+            <div>
+                <h2 class="subscription_title">Subscribe for our mailing list to get latest updates and offers</h2>
+                <p class="subscription_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                <button type="submit" class="subscription_bt">Subscribe</button>
+            </div>           
+            <img src="./images/men.jpg" alt="Men" width="384" class="subscription-img">
         </section>
     </main>
-    <footer>
-        <a href="./index.html"><img src="./images/logo.svg" alt="Logo"></a>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="">Booking</a></li>
-                <li><a href="">Facilities</a></li>
-                <li><a href="">Location</a></li>
-                <li><a href="">Contact</a></li>
+    <footer class="site-footer container">
+        <div class="logo-inner">
+            <a href="./index.html"><img src="./images/logo.svg" alt="Logo" class="logo-footer"></a>
+            <p class="footer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>       
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li><a href="./index.html" class="footer-link title">Home</a></li>
+                <li><a href="" class="footer-link">Booking</a></li>
+                <li><a href="" class="footer-link">Facilities</a></li>
+                <li><a href="" class="footer-link">Location</a></li>
+                <li><a href="" class="footer-link">Contact</a></li>
             </ul>            
-            <ul>
-                <li><a href="">Help</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Help center</a></li>
-                <li><a href="">Privacy policy</a></li>
-                <li><a href="">FAQs</a></li>            
+            <ul class="footer-navigation_list">
+                <li><a href="" class="footer-link title">Help</a></li>
+                <li><a href="" class="footer-link">About Us</a></li>
+                <li><a href="" class="footer-link">Help center</a></li>
+                <li><a href="" class="footer-link">Privacy policy</a></li>
+                <li><a href="" class="footer-link">FAQs</a></li>            
             </ul>
         </nav>
-        <h2>Get the app</h2>
-        <ul>
-            <li><a href="">iOS app</a></li>
-            <li><a href="">Android app</a></li>
-        </ul>
+        <div>
+            <h2 class="app-title">Get the app</h2>
+            <ul class="app-list">
+                <li><a href="" class="footer-link">iOS app</a></li>
+                <li><a href="" class="footer-link">Android app</a></li>
+            </ul>
+        </div>        
     </footer>
 </body>
 </html>
